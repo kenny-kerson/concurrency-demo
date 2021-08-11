@@ -3,6 +3,8 @@ rootProject.name = 'concurrency-demo'
 include(
     ':app-first',
     ':app-second',
+    ':app-specs',
+
     ':db-postgresql',
     ':db-redis'
 )
