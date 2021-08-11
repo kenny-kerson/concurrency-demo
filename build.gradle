@@ -1,12 +1,12 @@
 buildscript {
     ext {
         springBootVersion = '2.3.0.RELEASE'
+        // 왜 최신버전으로 안되는거지????
+//        springBootVersion = '2.5.3.RELEASE'
     }
 
     repositories {
         mavenCentral()
-//        maven { url "https://repo1.maven.org/maven2/" }
-//        maven { url "https://nexus.kabang.io:2443/repository/gradle-plugins" }
     }
 
     dependencies {
@@ -26,11 +26,6 @@ subprojects {
 
     repositories {
         mavenCentral()
-//        maven { url "https://repo1.maven.org/maven2/" }
-//        maven { url "https://nexus.kabang.io:2443/repository/release" }
-//        maven { url "https://nexus.kabang.io:2443/repository/releases" }
-//        maven { url "https://nexus.kabang.io:2443/repository/thirdparty" }
-//        maven { url "https://nexus.kabang.io:2443/repository/jcenter" }
     }
 
     dependencies {
@@ -42,12 +37,6 @@ subprojects {
         useJUnitPlatform()
     }
 }
-
-//plugins {
-//    id 'org.springframework.boot' version '2.5.3'
-//    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
-//    id 'java'
-//}
 
 
 
