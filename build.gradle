@@ -1,0 +1,55 @@
+buildscript {
+    ext {
+        springBootVersion = '2.3.0.RELEASE'
+    }
+
+    repositories {
+        mavenCentral()
+//        maven { url "https://repo1.maven.org/maven2/" }
+//        maven { url "https://nexus.kabang.io:2443/repository/gradle-plugins" }
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("io.spring.gradle:dependency-management-plugin:1.0.11.RELEASE")
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    group = 'com.kenny.demo.concurrency'
+    version = '0.0.1.RELEASE'
+    sourceCompatibility = '11'
+
+    repositories {
+        mavenCentral()
+//        maven { url "https://repo1.maven.org/maven2/" }
+//        maven { url "https://nexus.kabang.io:2443/repository/release" }
+//        maven { url "https://nexus.kabang.io:2443/repository/releases" }
+//        maven { url "https://nexus.kabang.io:2443/repository/thirdparty" }
+//        maven { url "https://nexus.kabang.io:2443/repository/jcenter" }
+    }
+
+    dependencies {
+        implementation 'org.springframework.boot:spring-boot-starter'
+        testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+
+//plugins {
+//    id 'org.springframework.boot' version '2.5.3'
+//    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+//    id 'java'
+//}
+
+
+
+
+

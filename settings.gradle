@@ -1,0 +1,8 @@
+rootProject.name = 'concurrency-demo'
+
+include(
+    ':app-first',
+    ':app-second',
+    ':db-postgresql',
+    ':db-redis'
+)
