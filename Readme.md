@@ -4,18 +4,30 @@
 
 ## Index
 ***
-- Specification
-- Project Structure
-- Concurrency Case
-- Reference
+- [Specification](#Specification)
+- [Project Structure](#Project-Structure)
+- [Concurrency Case](#Concurrency-Case)
+- [Reference](#Reference)
 
 ## Specification
 ***
-- TBD
+- Language : Java 11
+- Framework : Spring Boot 2.5.3
+- WAS : Embedded Tomcat
+- NoSQL : Redis x.x.x
+- RDBMS : PostgreSQL x.x.x
+- 부하발생기 : Apache jMeter
 
 ## Project Structure
 ***
-- TBD
+- 전체 : 멀티모듈 구성
+- Application
+   * app-first : API서버 1번 모듈
+   * app-second : API서버 2번 모듈
+   * app-specs : API Specification 정의 모듈 
+- DBMS
+   * db-redis : Redis Repository 모듈
+   * db-postgresql : PostgreSQL Repository 모듈 
  
 ## Concurrency Case
 ***
