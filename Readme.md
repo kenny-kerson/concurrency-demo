@@ -1,13 +1,15 @@
 # Concurrency Demo
 - 동시성 제어를 위한 샘플코드를 구현 및 테스트하기 위한 프로젝트
 - 1개의 인스턴스, N개의 인스턴스 등에서, 발생할 수 있는 동시성 이슈를 해결하기 위한 코드를 작성해본다.
-
+    
+    
 ## Index
 - [Specification](#Specification)
 - [Project Structure](#Project-Structure)
 - [Concurrency Case](#Concurrency-Case)
 - [Reference](#Reference)
-
+    
+    
 ## Specification
 - Language : Java 11
 - Framework : Spring Boot 2.5.3
@@ -15,7 +17,8 @@
 - NoSQL : Redis x.x.x
 - RDBMS : PostgreSQL x.x.x
 - 부하발생기 : Apache jMeter
-
+    
+    
 ## Project Structure
 - 전체 : 멀티모듈 구성
 - Application
@@ -25,7 +28,8 @@
 - DBMS
    * db-redis : Redis Repository 모듈
    * db-postgresql : PostgreSQL Repository 모듈 
- 
+    
+    
 ## Concurrency Case
 ### # 인스턴스가 N개일때
 - 일반적으로, 실무에서 직면하게 되는 케이스
@@ -36,6 +40,7 @@
 #### 2) Redis를 활용한 @Transactional 처리 
 
 ### # 인스턴스가 1개일때 
-
+    
+    
 ## Reference
 - Tech Note : TBD
