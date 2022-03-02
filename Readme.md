@@ -1,13 +1,13 @@
 # Concurrency Demo
 - 동시성 제어를 위한 샘플코드를 구현 및 테스트하기 위한 프로젝트
-- 1개의 인스턴스, N개의 인스턴스 등에서, 발생할 수 있는 동시성 이슈를 해결하기 위한 코드를 작성해본다.
+- 1개의 인스턴스, N개의 인스턴스 등에서, 발생할 수 있는 동시성 이슈를 해결하기 위한 코드를 작성해본다.  
     
     
 ## Index
 - [Specification](#Specification)
 - [Project Structure](#Project-Structure)
 - [Concurrency Case](#Concurrency-Case)
-- [Reference](#Reference)
+- [Reference](#Reference)  
     
     
 ## Specification

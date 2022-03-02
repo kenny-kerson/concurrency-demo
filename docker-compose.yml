@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+  # ========================================================================= #
+  # - Redis
+  # ========================================================================= #
+  redis:
+    image: redis:alpine
+    ports:
+      - 6379:6379
+    container_name: "redis_cccy_demo"
+
+  # ========================================================================= #
+  # - PostgreSQL
+  # ========================================================================= #
+  postgresql:
+    image: postgres:13-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=develop
+      - POSTGRES_PASSWORD=1qaz@WSX
+      - POSTGRES_DB=oslo_epas_local
+    volumes:
+      - ./sql/oslo_epas_local/:/docker-entrypoint-initdb.d/
+    container_name: "psql_cccy_demo"
