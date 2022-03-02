@@ -1,1 +1,3 @@
-
+logging:
+  level:
+    com.kenny.demo.concurrency.db.postgresql: DEBUG

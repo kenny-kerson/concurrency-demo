@@ -1,1 +1,6 @@
+server:
+  port: 8182
 
+logging:
+  level:
+    com.kenny.demo.concurrency.app.second: DEBUG
